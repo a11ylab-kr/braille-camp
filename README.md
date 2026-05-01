@@ -75,17 +75,18 @@ This opensource project is based on the [Apache 2.0](./LICENSE) license.
 
 ### Installation
 
-Clone this repository:
+Clone this repository and install it in editable mode:
 
 ```
 git clone https://github.com/campable-io/braille-camp.git
 cd braille-camp
+python -m pip install -e .
 ```
 
 Import the `convert_latex_to_braille` function. This takes a `LaTeX` input which transcribes to braille notation:
 
 ```
-from .algorithm import convert_latex_to_braille
+from algorithm import convert_latex_to_braille
 
 problem = """다음 극한값을 구하여라.
 (1) \( \lim _{n \rightarrow \infty} \frac{(n+2)(3n-5)}{(2n+1)(n-2)} \)
